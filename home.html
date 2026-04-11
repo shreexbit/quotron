@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUOTRON</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+  <h1 class="logo">QUOTRON</h1>
+
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="daily.html">Daily</a>
+
+<!-- theme change  -->
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </div>
+</nav>
+<!-- body -->
+  <section class="hero">
+    <h1>FREE QUOTE GENERATOR</h1>
+    <p>Inspire your thoughts with beautiful and meaningful quotes.</p>
+  </section>
+
+<!-- generating quotes -->
+  <section class="generator">
+    <div class="generator-card">
+
+      <div class="quote-box" id="mainQuote">
+        <p class="quote">Click generate to get a quote ✨</p>
+        <p class="author"></p>
+      </div>
+
+      <button id="generateBtn">Generate Quote</button>
+
+    </div>
+  </section>
+
+
+  <section class="quotes-grid" id="quotesGrid"></section>
+
+</body>
+<script src="script.js"></script>
+</html>

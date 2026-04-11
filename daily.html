@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Quotes - Quotron</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- navbar -->
+  <nav class="navbar">
+    <h1 class="logo">QUOTRON</h1>
+
+    <div class="nav-right">
+      <a href="home.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="daily.html">Daily</a>
+
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+  </nav>
+
+<!-- body -->
+  <section class="hero small">
+    <h1>Daily Quotes 🌅</h1>
+    <p>Start your day with inspiration</p>
+  </section>
+
+  <section class="daily-card" id="dailyQuote">
+   
+  </section>
+
+<!-- quote choosing options -->
+  <section class="controls-wrapper">
+    <div class="controls-card">
+      <select id="moodSelect">
+        <option value="">Choose Mood</option>
+        <option value="life">Life</option>
+        <option value="love">Love</option>
+        <option value="success">Success</option>
+        <option value="motivational">Motivation</option>
+      </select>
+    </div>
+  </section>
+
+
+  <section class="quotes-grid" id="quotesGrid"></section>
+
+
+  <script src="daily.js"></script>
+
+</body>
+</html

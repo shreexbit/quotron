@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore - Quotron</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar -->
+  <nav class="navbar">
+    <h1 class="logo">QUOTRON</h1>
+
+    <div class="nav-right">
+      <a href="home.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="daily.html">
+        Daily
+      </a>
+
+<!-- theme change  -->
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+  </nav>
+
+
+  <section class="hero small">
+    <h1>Explore Quotes</h1>
+    <p>Search, filter and discover meaningful quotes</p>
+  </section>
+
+  <!-- searching quotes -->
+  <section class="controls-wrapper">
+    <div class="controls-card">
+
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search quotes or author..." 
+      />
+
+      <select id="filterSelect">
+        <option value="">Filter by Length</option>
+        <option value="short">Short (&lt; 80 chars)</option>
+        <option value="long">Long (&gt; 80 chars)</option>
+      </select>
+
+      <select id="sortSelect">
+        <option value="">Sort By</option>
+        <option value="author">Author (A-Z)</option>
+        <option value="length">Length</option>
+      </select>
+
+    </div>
+  </section>
+
+
+  <section class="quotes-grid" id="quotesGrid"></section>
+
+
+  <script src="explore.js"></script>
+
+</body>
+</html>
